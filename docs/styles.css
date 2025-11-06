@@ -118,3 +118,59 @@ footer, .site-footer {
   .explain, .resultado { min-height: 120px; }
 }
 
+/* estilos para enlaces de interés (mejora visual sin iconos) */
+.links-interes{
+  background:#fff;
+  border:1px solid #e6eef6;
+  padding:14px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(11,18,32,0.04);
+}
+.links-interes h3{
+  margin:0 0 10px;
+  color:#0b1220;
+  font-size:1.05rem;
+  letter-spacing:0.2px;
+}
+.links-interes ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.links-interes li a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#0b1220;
+  padding:8px 10px;
+  border-radius:8px;
+  transition:background .15s ease,transform .12s ease,box-shadow .12s ease,border-color .12s ease;
+  border:1px solid transparent;
+}
+.links-interes li a:hover{
+  background:linear-gradient(90deg,#f7fbff,#eef6ff);
+  transform:translateY(-3px);
+  box-shadow:0 12px 28px rgba(11,18,32,0.06);
+  border-color:#dbeaf7;
+}
+/* eliminados los iconos añadidos anteriormente (ya no hay pseudo-elemento :before) */
+.links-interes li a img{
+  width:34px;
+  height:24px;
+  object-fit:cover;
+  border-radius:4px;
+  flex-shrink:0;
+}
+.links-interes a .meta{
+  font-size:14px;
+  color:#44576b;
+}
+/* pequeña adaptación móvil */
+@media(max-width:900px){
+  .links-interes{width:auto;padding:12px}
+}
+

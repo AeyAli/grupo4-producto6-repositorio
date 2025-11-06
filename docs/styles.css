@@ -4,7 +4,7 @@
 #TextoIndex{text-align: justify;}
 #FotoIndex{width: 1070px; height: 258px; border-radius: 10px;}
 .FotosCarrusel{width: 262px; height: 100px;}
-#mapa{width: 1035px; height: 180px; }
+#mapa{width: 1035px; height: 180px; border-radius: 10px; }
 *{box-sizing:border-box;margin:0;padding:0;}
 
 body{font-family:Arial,Helvetica,sans-serif;color:#111;background:#f5f5f5}

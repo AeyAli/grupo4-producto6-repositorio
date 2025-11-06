@@ -117,3 +117,94 @@ footer, .site-footer {
   .ticket-form { min-height: auto; }
   .explain, .resultado { min-height: 120px; }
 }
+
+/* Estilos mejorados para los enlaces del menú lateral derecho */
+.side { padding: 12px; }
+.side .menu-links,
+.side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side a,
+.side .menu-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  font-weight: 600;
+}
+
+/* borde de acento a la izquierda para estado y hover */
+.side a::before,
+.side .menu-links a::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  border-radius: 6px;
+  margin-right: 8px;
+  flex: 0 0 4px;
+  transition: background 0.12s ease;
+}
+
+/* Hover / focus */
+.side a:hover,
+.side a:focus,
+.side .menu-links a:hover,
+.side .menu-links a:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  color: #e10600;
+  border-color: rgba(225,16,0,0.12);
+}
+.side a:hover::before,
+.side a:focus::before,
+.side .menu-links a:hover::before,
+.side .menu-links a:focus::before {
+  background: linear-gradient(180deg,#e10600,#b70b00);
+}
+
+/* Estado activo destacado */
+.side a.active,
+.side .menu-links a.active {
+  color: #e10600;
+  background: linear-gradient(90deg, #fff7f7, #fff);
+  border-color: rgba(225,16,0,0.12);
+}
+.side a.active::before,
+.side .menu-links a.active::before {
+  background: linear-gradient(180deg,#e10600,#b70b00);
+}
+
+/* Iconos dentro de enlaces (si existen) */
+.side a .icon,
+.side .menu-links a .icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: rgba(225,16,0,0.06);
+  color: #e10600;
+  font-size: 14px;
+}
+
+/* Ajustes móviles: quitar elevación fuerte y reducir gaps */
+@media (max-width: 900px) {
+  .side { padding: 8px; }
+  .side a, .side .menu-links a { padding: 8px 10px; box-shadow: none; }
+  .side a:hover { transform: none; box-shadow: none; }
+}

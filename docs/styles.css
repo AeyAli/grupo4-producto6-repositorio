@@ -1,11 +1,11 @@
-
+*{box-sizing:border-box;margin:0;padding:0;}
 #logoF1{width: 200px; height: 69px;}
 #logoF1Footer{width: 100px; height: 100px;}
 .Redes{width: 30px; height: 20px;}
 #TextoIndex{text-align: justify;}
 #FotoIndex{width: 1070px; height: 258px;}
 .FotosCarrusel{width: 262px; height: 100px;}
-*{box-sizing:border-box;margin:0;padding:0;}
+#mapa{width: 1035px; height: 180px; }
 body{font-family:Arial,Helvetica,sans-serif;color:#111;background:#f5f5f5}
 .site-header{display:flex;align-items:center;justify-content:space-between;padding:0px 10px;background:#fff;border-bottom:4px solid #ff0000;position:sticky;top:0;z-index:50}
 .logo{display:flex;align-items:center;text-decoration:none}
